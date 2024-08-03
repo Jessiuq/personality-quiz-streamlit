@@ -1,0 +1,19 @@
+name: Save User Data
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  save-user-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Save user data
+        run: |
+          mkdir -p user_data
+          python save_user_data.py
