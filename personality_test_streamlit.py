@@ -124,8 +124,8 @@ def quiz():
                 "Ashamed – of the trait that was criticized, feeling that you might need to change to present yourself better",
                 [2, 3, 4])
             ]
-        },
-        {
+        }
+        #{
         #     "number": 3,
         #     "question": "When in a stressful situation that is out of your control, and you are nervous about the outcome, what do you do to feel better?",
         #     "options": [
@@ -424,7 +424,7 @@ def quiz():
         #         ("Quickly adapt and change your approach to achieve the desired result", [3]),
         #         ("Take your time to adjust and gradually adapt to the new method", [4])
         #     ]
-        }
+        #}
     ]
 
     for q in questions:
