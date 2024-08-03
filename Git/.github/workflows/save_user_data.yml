@@ -2,8 +2,8 @@ name: Save User Data
 
 on:
   push:
-    branches:
-      - main
+    paths:
+      - '*.pkl'
 
 jobs:
   save-user-data:
@@ -13,7 +13,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Save user data
+      - name: Commit and push changes
         run: |
-          mkdir -p user_data
-          python save_user_data.py
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add *.pkl
+          git commit -m "Save user data"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
