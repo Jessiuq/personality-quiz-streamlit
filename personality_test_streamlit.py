@@ -513,6 +513,14 @@ def show_results():
     with open(file_name, "wb") as f:
         pickle.dump(data, f)
 
+    with open(file_name, "rb") as f:
+        st.download_button(
+            label="Download your responses",
+            data=f,
+            file_name=file_name,
+            mime="application/octet-stream"
+        )
+
     st.success("Your responses and scores have been saved successfully!")
 
     if st.button("Restart Quiz"):
