@@ -209,7 +209,7 @@ def quiz():
             "number": 11,
             "question": "You receive negative criticism on a project you worked hard on, which makes you upset. Are you more likely to:",
             "options": [
-                ("Take time to reflect on the feedback and your feelings before continuing the project", [4, 6]),
+                ("Take time to reflect on your feelings before continuing the project", [4, 6]),
                 ("Quickly return to the project to make improvements and move forward", [3, 9])
             ]
         },
