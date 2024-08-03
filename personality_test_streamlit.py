@@ -10,6 +10,8 @@ def initialize_session_state():
         st.session_state.name = ""
     if "age" not in st.session_state:
         st.session_state.age = 1  # Initialize with a valid value within the range
+    if "ethnicity" not in st.session_state:
+        st.session_state.ethnicity = ""
     if "birthplace" not in st.session_state:
         st.session_state.birthplace = ""
     if "location" not in st.session_state:
@@ -24,6 +26,7 @@ def reset_session_state():
     st.session_state.step = "info"
     st.session_state.name = ""
     st.session_state.age = 1  # Initialize with a valid value within the range
+    st.session_state.ethnicity = ""
     st.session_state.birthplace = ""
     st.session_state.location = ""
     st.session_state.cumulative_scores = {i: 0 for i in range(1, 10)}
@@ -59,6 +62,12 @@ def participant_info():
         if not (1 <= st.session_state.age <= 100):
             st.error("Age must be between 1 and 100.")
 
+    # Ethnicty input
+    st.session_state.ethnicity = st.text_input("Ethnicity (e.g., German, Chinese)?", value=st.session_state.ethnicity)
+    if st.session_state.ethnicity:
+        if not re.match("^[A-Za-z ]+$", st.session_state.ethnicity):
+            st.error("Ethnicity must only contain letters and spaces.")
+
     # Birthplace input
     st.session_state.birthplace = st.text_input("Born (e.g., Brooklyn, NY)?", value=st.session_state.birthplace)
     if st.session_state.birthplace:
@@ -76,6 +85,8 @@ def participant_info():
             st.error("Please enter a valid name with only letters and spaces.")
         elif not (1 <= st.session_state.age <= 100):
             st.error("Please enter a valid age between 1 and 100.")
+        elif not (st.session_state.ethnicity and re.match("^[A-Za-z ]+$", st.session_state.ethnicity)):
+            st.error("Please enter a valid ethnicity containing only letters and spaces.")
         elif not (st.session_state.birthplace and re.match("^[A-Za-z ]+, [A-Za-z ]+$", st.session_state.birthplace)):
             st.error("Please enter a valid birthplace formatted as 'City, State' with no numbers.")
         elif not (st.session_state.location and re.match("^[A-Za-z ]+, [A-Za-z ]+$", st.session_state.location)):
@@ -500,6 +511,7 @@ def show_results():
     data = {
         "name": st.session_state.name,
         "age": st.session_state.age,
+        "ethnicity": st.session_state.ethnicity,
         "birthplace": st.session_state.birthplace,
         "location": st.session_state.location,
         "scorecard": st.session_state.scorecard,
