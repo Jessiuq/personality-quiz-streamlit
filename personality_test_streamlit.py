@@ -4,7 +4,6 @@ import re
 import os
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 
 def initialize_session_state():
     if "step" not in st.session_state:
