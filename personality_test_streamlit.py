@@ -110,38 +110,25 @@ def quiz():
             "number": 1,
             "question": "When making an important decision that greatly affects your life, which of the following best describes your approach?",
             "options": [
-                (
-                "Logical – I carefully consider each option, considering the facts, pros, and cons to make the most logical decision",
-                [5, 6, 7], "classic"),
-                (
-                "Emotional – I focus on how each option affects my emotions and aligns with my values to guide my decision",
-                [2, 3, 4], "parisian"),
-                (
-                "Instinctual – I rely on my instincts or gut feelings to guide me toward the option that feels intuitively right",
-                [8, 9, 1], "messy")
+                ("Logical – I carefully consider each option, considering the facts, pros, and cons to make the most logical decision", [5, 6, 7], "classic"),
+                ("Emotional – I focus on how each option affects my emotions and aligns with my values to guide my decision", [2, 3, 4], "parisian"),
+                ("Instinctual – I rely on my instincts or gut feelings to guide me toward the option that feels intuitively right", [8, 9, 1], "messy")
             ]
         },
         {
             "number": 2,
             "question": "If someone criticizes one of your personality traits that you consider essential to your identity, how are you most likely to feel in the moment?",
             "options": [
-                (
-                "Frustrated – I might feel angry towards the person who criticized you or disappointed in how you present yourself to others",
-                [1, 8, 9], "intense"),
-                (
-                "Anxious – I might feel uncertain and seek advice on how to improve, or you may need time to reflect and regain confidence",
-                [5, 6, 7], "procrastinator"),
-                (
-                "Self-conscious – I might feel ashamed of the trait that was criticized, and consider whether you need to make changes in how you present yourself",
-                [2, 3, 4], "parisian")
+                ("Frustrated – I might feel angry towards the person who criticized you or disappointed in how you present yourself to others", [1, 8, 9], "intense"),
+                ("Anxious – I might feel uncertain and seek advice on how to improve, or you may need time to reflect and regain confidence", [5, 6, 7], "procrastinator"),
+                ("Self-conscious – I might feel ashamed of the trait that was criticized, and consider whether you need to make changes in how you present yourself", [2, 3, 4], "parisian")
             ]
         },
         {
             "number": 3,
             "question": "When you’re in a stressful situation that is out of your control, and you feel nervous about the outcome, what do you usually do to feel better?",
             "options": [
-                ("I prefer to spend time alone to focus on managing my feelings and thoughts privately", [5],
-                 "procrastinator"),
+                ("I prefer to spend time alone to focus on managing my feelings and thoughts privately", [5], "procrastinator"),
                 ("I reach out to and seek support from others to feel more secure and grounded", [6], "parisian"),
                 ("I keep myself occupied with a structured schedule to stay engaged and productive", [7], "messy")
             ]
@@ -150,12 +137,9 @@ def quiz():
             "number": 4,
             "question": "When you receive unexpected news, how do you usually react?",
             "options": [
-                ("I take time to process it alone, reflecting on its impact and gathering more details", [5],
-                 "procrastinator"),
-                ("I quickly adapt and focus on finding positives, embracing any opportunities it might bring", [7],
-                 "messy"),
-                ("I immediately discuss it with someone I trust to gain their perspective and reassurance", [6],
-                 "parisian")
+                ("I take time to process it alone, reflecting on its impact and gathering more details", [5], "procrastinator"),
+                ("I quickly adapt and focus on finding positives, embracing any opportunities it might bring", [7], "messy"),
+                ("I immediately discuss it with someone I trust to gain their perspective and reassurance", [6], "parisian")
             ]
         },
         {
@@ -171,12 +155,9 @@ def quiz():
             "number": 6,
             "question": "When you want to make a good impression on someone, how do you usually approach it?",
             "options": [
-                ("I try to make them feel comfortable by offering a small gesture of kindness or consideration", [2],
-                 "parisian"),
-                ("I highlight my skills or achievements by discussing areas where I feel confident and capable", [3],
-                 "intense"),
-                ("I share something unique about myself, such as a personal talent or quality that I value", [4],
-                 "messy")
+                ("I try to make them feel comfortable by offering a small gesture of kindness or consideration", [2], "parisian"),
+                ("I highlight my skills or achievements by discussing areas where I feel confident and capable", [3], "intense"),
+                ("I share something unique about myself, such as a personal talent or quality that I value", [4], "messy")
             ]
         },
         {
@@ -192,38 +173,27 @@ def quiz():
             "number": 8,
             "question": "You’re feeling hesitant about making a big commitment. What might be causing your hesitation?",
             "options": [
-                (
-                "I’m thinking about how the commitment will affect my personally and the time or effort it will demand",
-                [8], "messy"),
-                ("I am concerned that I might make mistakes and how those could impact the success of the commitment",
-                 [1], "procrastinator"),
-                ("I am reflecting on how this commitment might affect my emotions and the feelings of those around me",
-                 [9], "parisian")
+                ("I’m thinking about how the commitment will affect me personally and the time or effort it will demand", [8], "messy"),
+                ("I am concerned that I might make mistakes and how those could impact the success of the commitment", [1], "procrastinator"),
+                ("I am reflecting on how this commitment might affect my emotions and the feelings of those around me", [9], "parisian")
             ]
         },
         {
             "number": 9,
             "question": "In the midst of a stressful situation, how do you typically respond?",
             "options": [
-                ("I withdraw and seek solitude, giving myself time to reflect and regain a sense of calm", [4, 5, 9],
-                 "procrastinator"),
-                ("I focus on finding practical solutions and creating a plan to address the issue directly", [1, 2, 6],
-                 "classic"),
-                (
-                "I concentrate on my strengths and remind myself of past successes to approach the challenge with confidence",
-                [3, 7, 8], "messy")
+                ("I withdraw and seek solitude, giving myself time to reflect and regain a sense of calm", [4, 5, 9], "procrastinator"),
+                ("I focus on finding practical solutions and creating a plan to address the issue directly", [1, 2, 6], "classic"),
+                ("I concentrate on my strengths and remind myself of past successes to approach the challenge with confidence", [3, 7, 8], "intense")
             ]
         },
         {
             "number": 10,
             "question": "When something doesn’t go your way, how are you most likely to respond?",
             "options": [
-                ("I stay positive and focus on building morale and maintaining an optimistic attitude", [7, 9, 2],
-                 "messy"),
-                ("I address the issue by analyzing it objectively and look for practical solutions", [3, 1, 5],
-                 "classic"),
-                ("I process my emotional response to the situation first before I can effectively move forward",
-                 [4, 6, 8], "parisian")
+                ("I stay positive and focus on building morale and maintaining an optimistic attitude", [7, 9, 2], "messy"),
+                ("I address the issue by analyzing it objectively and look for practical solutions", [3, 1, 5], "classic"),
+                ("I process my emotional response to the situation first before I can effectively move forward", [4, 6, 8], "parisian")
             ]
         },
         {
@@ -231,37 +201,30 @@ def quiz():
             "question": "You receive negative criticism on a project you put a lot of effort into, and it upsets you. How are you likely to respond?",
             "options": [
                 ("I take time to process my feelings before deciding how best to proceed", [4, 6], "procrastinator"),
-                ("I quickly return to the project, using the criticism to guide my actions and improve", [3, 9],
-                 "intense")
+                ("I quickly return to the project, using the criticism to guide my actions and improve", [3, 9], "intense")
             ]
         },
         {
             "number": 12,
             "question": "Think of a goal you’ve set for yourself that turned out to be more challenging and less enjoyable than you expected. How are you most likely to respond?",
             "options": [
-                ("I push through the difficulties and continue working towards the goal, determined to see it through",
-                 [6, 8], "intense"),
-                (
-                "I reevaluate the goal and might try different approaches before deciding if I need to change or abandon it",
-                [4, 7], "messy")
+                ("I push through the difficulties and continue working towards the goal, determined to see it through", [6, 8], "intense"),
+                ("I reevaluate the goal and might try different approaches before deciding if I need to change or abandon it", [4, 7], "messy")
             ]
         },
         {
             "number": 13,
             "question": "You are going through a hard time, and an acquaintance offers to listen. How are you most likely to respond?",
             "options": [
-                ("I would likely take them up on their offer, trusting that they genuinely want to help", [2, 9],
-                 "parisian"),
-                ("I would be cautious, preferring to keep my feelings private since I don’t know them well", [5, 6],
-                 "procrastinator")
+                ("I would likely take them up on their offer, trusting that they genuinely want to help", [2, 9], "parisian"),
+                ("I would be cautious, preferring to keep my feelings private since I don’t know them well", [5, 6], "procrastinator")
             ]
         },
         {
             "number": 14,
             "question": "After teaching a new colleague at work everything you know, they get the raise you were hoping for. What is likely to be your immediate reaction?",
             "options": [
-                ("I’d feel proud of the role I played in their success, even if I didn’t get the raise", [2, 8],
-                 "parisian"),
+                ("I’d feel proud of the role I played in their success, even if I didn’t get the raise", [2, 8], "parisian"),
                 ("I’d feel disappointed that I missed out on opportunity I wanted", [1, 3], "classic")
             ]
         },
@@ -270,19 +233,15 @@ def quiz():
             "question": "Your new neighbor moves in and seems indifferent towards you. How are you more likely to respond?",
             "options": [
                 ("I’d make an effort to break the ice and build a friendly relationship", [3, 2], "parisian"),
-                (
-                "I’d respect their space and focus on my own life, letting things develop naturally", [1, 5], "classic")
+                ("I’d respect their space and focus on my own life, letting things develop naturally", [1, 5], "classic")
             ]
         },
         {
             "number": 16,
             "question": "In group projects, do you prefer to:",
             "options": [
-                ("Take on a role that allows for creative control and shaping the project’s direction", [4, 7],
-                 "intense"),
-                (
-                "Contribute as a supportive team member, helping others and ensuring the project runs smoothly", [6, 9],
-                "parisian")
+                ("Take on a role that allows for creative control and shaping the project’s direction", [4, 7], "intense"),
+                ("Contribute as a supportive team member, helping others and ensuring the project runs smoothly", [6, 9], "parisian")
             ]
         },
         {
@@ -290,29 +249,23 @@ def quiz():
             "question": "When deciding whether to go on a work trip with your boss and colleagues, what is more likely to influence your decision?",
             "options": [
                 ("I’d consider if the trip will advance my career and align with my personal goals", [3, 1], "classic"),
-                (
-                "I’d consider if the trip will be enjoyable, and create a positive experience for me and my colleagues",
-                [2, 7], "parisian")
+                ("I’d consider if the trip will be enjoyable, and create a positive experience for me and my colleagues", [2, 7], "messy")
             ]
         },
         {
             "number": 18,
             "question": "As you leave your job for good and reflect on the positive aspects of your time there, what are you more likely to focus on?",
             "options": [
-                ("I’d focus on the contributions I made to the company and the impact I had on my coworkers", [1, 8],
-                 "classic"),
-                ("I’d focus on the personal growth and valuable experiences I gained during my time there", [5, 9],
-                 "parisian")
+                ("I’d focus on the contributions I made to the company and the impact I had on my coworkers", [1, 8], "classic"),
+                ("I’d focus on the personal growth and valuable experiences I gained during my time there", [5, 9], "parisian")
             ]
         },
         {
             "number": 19,
             "question": "When attending a social event, how do you typically feel about your role in the group?",
             "options": [
-                ("I prefer engaging actively and making a positive and memorable impact on the group", [7, 8],
-                 "intense"),
-                ("I prefer to observe and engage selectively, forming meaningful connections with a few people", [4, 5],
-                 "parisian")
+                ("I prefer engaging actively and making a positive and memorable impact on the group", [7, 8], "messy"),
+                ("I prefer to observe and engage selectively, forming meaningful connections with a few people", [4, 5], "parisian")
             ]
         },
         {
@@ -327,11 +280,8 @@ def quiz():
             "number": 21,
             "question": "When faced with a task that you’ve only done a few times before, how do you usually approach it?",
             "options": [
-                ("I take responsibility and handle the task on your own, trusting in my abilities to manage it", [1],
-                 "classic"),
-                (
-                "I seek advice or assistance from others with more experience to ensure the task is completed effectively",
-                [6], "parisian")
+                ("I take responsibility and handle the task on your own, trusting in my abilities to manage it", [1], "classic"),
+                ("I seek advice or assistance from others with more experience to ensure the task is completed effectively", [6], "parisian")
             ]
         },
         {
@@ -339,28 +289,22 @@ def quiz():
             "question": "Your friends decide to eat dinner somewhere, despite them knowing you don’t like the restaurant. How are you more likely to respond?",
             "options": [
                 ("I’d propose an alternative restaurant that everyone can enjoy", [1], "messy"),
-                ("I’d agree with their choice and go along with their decision, even if it’s not my favorite spot", [9],
-                 "procrastinator")
+                ("I’d agree with their choice and go along with their decision, even if it’s not my favorite spot", [9], "procrastinator")
             ]
         },
         {
             "number": 23,
             "question": "When creating a plan for a project you’ve been assigned, how do you prefer to approach it?",
             "options": [
-                (
-                "I prefer to create an outline and collaborate with others to gather ideas and feedback before finalizing the plan",
-                [2], "parisian"),
-                (
-                "I prefer to make a detailed plan independently first, then seek feedback and make adjustments as needed",
-                [5], "classic")
+                ("I prefer to create an outline and collaborate with others to gather ideas and feedback before finalizing the plan", [2], "parisian"),
+                ("I prefer to make a detailed plan independently first, then seek feedback and make adjustments as needed", [5], "classic")
             ]
         },
         {
             "number": 24,
             "question": "After a busy week, you’ve set aside tomorrow for a day of personal enjoyment and self-care. A new friend calls and asks for your help to move out of their apartment. How are you more likely to respond?",
             "options": [
-                ("I’d agree to help with the move, even if it means altering my plans for personal enjoyment", [2],
-                 "parisian"),
+                ("I’d agree to help with the move, even if it means altering my plans for personal enjoyment", [2], "parisian"),
                 ("I’d politely decline, explaining that I need the day for myself to focus on self-care", [7], "messy")
             ]
         },
@@ -369,8 +313,7 @@ def quiz():
             "question": "You discover that an acquaintance is pursuing the same goal as you. How are you more likely to respond?",
             "options": [
                 ("I’d assess and compare my progress with theirs to see where I stand", [3], "intense"),
-                ("I’d reach out to them and share ideas, even if it means they might reach the goal first", [2],
-                 "parisian")
+                ("I’d reach out to them and share ideas, even if it means they might reach the goal first", [2], "parisian")
             ]
         },
         {
@@ -385,11 +328,8 @@ def quiz():
             "number": 27,
             "question": "When tackling a new and unfamiliar task, how do you prefer to approach it?",
             "options": [
-                (
-                "I prefer to stick closely to established guidelines or instructions to make sure I’m on the right track",
-                [6], "classic"),
-                ("I prefer to introduce my own unique ideas or methods to make the task more tailored to my style", [4],
-                 "messy")
+                ("I prefer to stick closely to established guidelines or instructions to make sure I’m on the right track", [6], "classic"),
+                ("I prefer to introduce my own unique ideas or methods to make the task more tailored to my style", [4], "messy")
             ]
         },
         {
@@ -420,12 +360,8 @@ def quiz():
             "number": 31,
             "question": "When you’re working on a long-term task, how do you typically approach it?",
             "options": [
-                (
-                "I tend to concentrate on the task until it’s finished, sometimes overlooking my other responsibilities",
-                [5], "intense"),
-                (
-                "I often have difficulty staying focused, sometimes switching between the task at hand and my other responsibilities",
-                [7], "messy")
+                ("I tend to concentrate on the task until it’s finished, sometimes overlooking my other responsibilities", [5], "intense"),
+                ("I often have difficulty staying focused, sometimes switching between the task at hand and my other responsibilities", [7], "messy")
             ]
         },
         {
@@ -433,17 +369,15 @@ def quiz():
             "question": "You have to decide between two job options. How do you prefer to make your decision?",
             "options": [
                 ("I prefer to ask others what they would do before making my decision", [6], "parisian"),
-                ("I prefer to decide independently without seeking outside opinions", [8], "classic")
+                ("I prefer to decide independently without seeking outside opinions", [8], "intense")
             ]
         },
         {
             "number": 33,
             "question": "You start a new hobby and find it more challenging than you anticipated. How are you more likely to respond?",
             "options": [
-                ("I’d continue with the hobby, viewing the challenges as opportunities to grow and feel accomplished",
-                 [8], "intense"),
-                ("I’d explore a different hobby that is more enjoyable and aligns better with my interests", [4],
-                 "messy")
+                ("I’d continue with the hobby, viewing the challenges as opportunities to grow and feel accomplished", [8], "intense"),
+                ("I’d explore a different hobby that is more enjoyable and aligns better with my interests", [4], "messy")
             ]
         },
         {
@@ -466,22 +400,16 @@ def quiz():
             "number": 36,
             "question": "You achieve a significant milestone with the support of others. How do you typically feel about this accomplishment?",
             "options": [
-                (
-                "I feel a strong sense of gratitude, recognizing the importance of the collaboration and support that made the achievement possible",
-                [6], "parisian"),
-                ("I feel proud of what I’ve accomplished, focusing on how it reflects my own capabilities and efforts",
-                 [3], "intense")
+                ("I feel a strong sense of gratitude, recognizing the importance of the collaboration and support that made the achievement possible", [6], "parisian"),
+                ("I feel proud of what I’ve accomplished, focusing on how it reflects my own capabilities and efforts", [3], "intense")
             ]
         },
         {
             "number": 37,
             "question": "You have been working on a project for a while, and were told that the method in which you do things needs to be changed. How are you likely to respond?",
             "options": [
-                (
-                "I’d immediately shift my approach to align with the new requirements, adapting quickly in order to achieve the desired result",
-                [3], "messy"),
-                ("I’d prefer to gradually adapt, taking time to understand the new method and integrate it comfortably",
-                 [4], "classic")
+                ("I’d immediately shift my approach to align with the new requirements, adapting quickly in order to achieve the desired result", [3], "messy"),
+                ("I’d prefer to gradually adapt, taking time to understand the new method and integrate it comfortably", [4], "classic")
             ]
         }
     ]
