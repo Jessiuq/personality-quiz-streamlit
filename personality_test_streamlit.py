@@ -460,12 +460,17 @@ def quiz():
             # Update cumulative scores based on confidence intervals
             for q in questions:
                 selected_option = st.session_state.scorecard[q['number']]['option']
-                for option, types, perfectionist_type in q['options']:
+                for option, types, perfectionist_types in q['options']:
                     confidence_value = st.session_state.scorecard[q['number']]['confidence_intervals'][option]
                     if confidence_value:
                         for enneagram_type in types:
                             st.session_state.cumulative_scores[enneagram_type] += confidence_value
-                        st.session_state.perfectionist_scores[perfectionist_type] += confidence_value
+                        # Check if perfectionist_types is a list or a single string
+                        if isinstance(perfectionist_types, list):
+                            for perfectionist_type in perfectionist_types:
+                                st.session_state.perfectionist_scores[perfectionist_type] += confidence_value
+                        else:
+                            st.session_state.perfectionist_scores[perfectionist_types] += confidence_value
 
             # Save the results and generate the download link
             save_results()
